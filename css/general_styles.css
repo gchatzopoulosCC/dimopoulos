@@ -1,0 +1,18 @@
+/* Variables */
+:root{
+    /* Header height */
+    --header_height: 13vh;
+
+    /* Colors */
+    --white: #E0F4FF;
+    --light_blue: #87C4FF;
+    --blue: #39A7FF;
+    --beige: #FFEED9;
+
+    /* Transition */
+    --fast: .2s;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,46 +1,11 @@
-/* Import Roboto font family */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-:root{
-    /* Font sizes */
-    --xs: 1rem;
-    --s: 1.125rem;
-    --m: 1.5rem;
-    --l: 2rem;
-    --xl: 3rem;
-
-    /* Header height */
-    --header_height: 13vh;
-
-    /* General margin */
-    --margin: var(--xl);
-
-    /* Colors */
-    --white: #E0F4FF;
-    --light_blue: #87C4FF;
-    --blue: #39A7FF;
-    --beige: #FFEED9;
-
-    /* Transition */
-    --fast: .2s;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: var(--s);
-}
+/* Imports */
+@import url('general_styles.css');
 
 
-/* Nav */
 #doc-header{
     width: 100%;
     height: var(--header_height);
     position: fixed;
-    background-color: aquamarine;
 }
 
 #doc-header-div{
@@ -53,9 +18,7 @@ body{
 }
 
 #logo{
-    font-size: var(--xl);
     color: var(--blue);
-    margin-left: var(--margin);
 }
 
 #navigation{
@@ -65,16 +28,12 @@ body{
 
 #nav-list{
     height: inherit;
-    margin-right: var(--margin);
     display: flex;
     align-items: center;
 }
 
-#nav-list a, .dropdowns{
-    padding: 0 1em;
+.nav-items{
     color: var(--blue);
-    font-size: var(--m);
-    font-weight: 500;
     text-decoration: none;
     height: var(--header_height);
     display: flex;
@@ -83,7 +42,7 @@ body{
     transition: var(--fast);
 }
 
-#nav-list a:hover, .dropdowns:hover{
+.nav-items:hover{
     background-color: var(--blue);
     cursor: pointer;
     color: var(--light_blue);
@@ -99,7 +58,6 @@ body{
 }
 
 #dropdown-menu{
-    padding: 1em 0;
     list-style: none;
     display: grid;
     grid-template-rows: 1fr;
@@ -111,15 +69,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--s);
-    margin: .1em;
     color: var(--white);
 }
 
 #burger-menu{
     display: block;
-    width: var(--l);
-    margin-right: var(--margin);
+    width: 32px;
 }
 
 #burger-menu:hover{
@@ -135,13 +90,8 @@ body{
     display: block;
     background-color: var(--blue);
     width: inherit;
-    height: calc(var(--xs) / 5);
-    margin-bottom: calc(var(--xs) / 3);
+    height: 3.2px;
     border-radius: 1em;
-}
-
-.burger-bars:last-child{
-    margin: 0;
 }
 
 #burger-bars-middle.clicked{
@@ -156,8 +106,6 @@ body{
 .burger-bars.clicked:last-child{
     transform: translate(0, -.65vh) rotate(45deg);
 }
-
-
 
 #doc-main, #doc-footer{
     position: relative;
