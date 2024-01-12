@@ -39,12 +39,20 @@
     padding: 0 var(--space-s);
 }
 
-#dropdown-menu{
+.nav-icons{
+    margin-left: var(--space-s);
+}
+
+.dropdown-div{
+    padding: var(--space-m) 0;
+}
+
+l.dropdown-menu{
     padding: var(--space-s) 0;
 }
 
-.dropwdown-menu-li{
-    margin: var(--space-3xs);
+.dropdown-menu-li{
+    margin: var(--space-xs);
 }
 
 #burger-menu{
@@ -57,4 +65,12 @@
 
 .burger-bars:last-child{
     margin: 0;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 640px){
+    #nav-list{
+        margin-right: 0;
+        padding-right: var(--space-l);
+    }
 }

@@ -48,16 +48,21 @@
     color: var(--light_blue);
 }
 
-#dropdown-div{
+.dropdowns:hover{
+    background-color: transparent;
+}
+
+.dropdown-div{
     display: none;
     height: auto;
     position: absolute;
+    top: var(--header_height);
     right: 0;
     width: 50%;
     background-color: var(--blue);
 }
 
-#dropdown-menu{
+.dropdown-menu{
     list-style: none;
     display: grid;
     grid-template-rows: 1fr;
@@ -73,7 +78,7 @@
 }
 
 #burger-menu{
-    display: block;
+    display: none;
     width: 32px;
 }
 
@@ -110,4 +115,33 @@
 #doc-main, #doc-footer{
     position: relative;
     top: var(--header_height);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 640px){
+    #nav-list{
+        position: absolute;
+        top: var(--header_height);
+        width: fit-content;
+        height: 100vh;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--blue);
+    }
+
+    .nav-items{
+        color: var(--white);
+    }
+
+    #dropdown-div{
+        position: absolute;
+        top: var(--header_height);
+        right: 35%;
+        margin-right: 0;
+    }
+
+    #burger-menu{
+        display: block;
+    }
 }

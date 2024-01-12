@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamiete o Petros</title>
+    <title>Thessaloniki</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/typography.css">
@@ -17,9 +17,51 @@
             <nav id="navigation">
                 <ul id="nav-list">
                     <li><a href="#" class="nav-items">Home</a></li>
-                    <li data-name="restaurants" class="dropdowns nav-items">Restaurants</li>
-                    <li data-name="bars" class="dropdowns nav-items">Bars</li>
-                    <li data-name="clubs" class="dropdowns nav-items">Clubs</li>
+                    <li data-name="restaurants" class="dropdowns nav-items">
+                        <header>
+                            Restaurants
+                            <i class="nav-icons fa-solid fa-caret-down"></i>
+                        </header>
+                        <main>
+                            <!-- Dropdown -->
+                            <div id="restaurants-dropdown" class="dropdown-div">
+                                <ul class="dropdown-menu">
+                                    <!-- Content will be added dynamically -->
+                                </ul>
+                            </div>
+                        </main>
+                    </li>
+                    <li data-name="bars" class="dropdowns nav-items">
+                        <header>
+                            Bars
+                            <i class="nav-icons fa-solid fa-caret-down"></i>
+                        </header>
+                        <main>
+                            <!-- Dropdown -->
+                            <div id="bars-dropdown" class="dropdown-div">
+                                <ul class="dropdown-menu">
+                                    <!-- Content will be added dynamically -->
+                                </ul>
+                            </div>
+                        </main>
+                    </li>
+                    <li data-name="clubs" class="dropdowns nav-items">
+                        <header>
+                            Clubs
+                            <i class="nav-icons fa-solid fa-caret-down"></i>
+                        </header>
+                        <main>
+                            <!-- Dropdown -->
+                            <div id="clubs-dropdown" class="dropdown-div">
+                                <ul class="dropdown-menu">
+                                    <!-- Content will be added dynamically -->
+                                </ul>
+                            </div>
+                        </main>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-items">Contact</a>
+                    </li>
                 </ul>
                 <div id="burger-menu">
                     <div class="burger-bars"></div>
@@ -27,12 +69,7 @@
                     <div class="burger-bars"></div>
                 </div>
             </nav>
-        </div>
-        <!-- Dropdown -->
-        <div id="dropdown-div">
-            <ul id="dropdown-menu">
-                <!-- Content will be added dynamically -->
-            </ul>
+
         </div>
     </header>
     <main id="doc-main">
@@ -41,6 +78,9 @@
     <footer id="doc-footer">
         <!-- Not finished yet -->
     </footer>
-    <script src="/js/index.js"></script>
 </body>
+
+<!-- Js files -->
+<script type="module" src="/js/general.js"></script>
+<script type="module" src="/js/navigation.js"></script>
 </html>
