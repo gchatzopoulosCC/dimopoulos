@@ -172,4 +172,12 @@
     .burger-menu{
         display: block;
     }
+
+    .burger-bar.clicked{
+        transform: translate(0, .45vh) rotate(-45deg);
+    }
+
+    .burger-bar.clicked:last-child{
+        transform: translate(0, -.45vh) rotate(45deg);
+    }
 }

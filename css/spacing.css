@@ -56,12 +56,8 @@
     margin: var(--space-xs);
 }
 
-.burger-bar{
+.burger-bar:not(:last-child){
     margin-bottom: var(--space-3xs);
-}
-
-.burger-bar:last-child{
-    margin: 0;
 }
 
 /* Responsiveness */
