@@ -4,9 +4,11 @@
     --header_height: 13vh;
 
     /* Colors */
-    --white: #E0F4FF;
-    --light_blue: #87C4FF;
-    --blue: #39A7FF;
+    --white: #F0F3FA;
+    --grey: #D5DEEF;
+    --light_blue: #8AAEED;
+    --blue: #628ECB;
+    --dark_blue: #395886;
     --beige: #FFEED9;
 
     /* Transition */
