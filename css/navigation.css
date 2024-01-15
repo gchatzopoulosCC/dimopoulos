@@ -6,6 +6,8 @@
     width: 100%;
     height: var(--header_height);
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #doc-header-div{
@@ -29,7 +31,13 @@
 #nav-list{
     height: inherit;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: var(--fast);
+}
+
+#nav-list.show{
+    transform: translateX(0);
 }
 
 .nav-items{
@@ -48,33 +56,52 @@
     color: var(--light_blue);
 }
 
-.dropdowns:hover{
-    background-color: transparent;
+.dropdowns{
+    display: flex;
+    flex-direction: column;
+    min-height: var(--header_height);
+    height: fit-content;
+    background-color: transparent !important;
 }
 
-.dropdown-div{
-    display: none;
-    height: auto;
-    position: absolute;
-    top: var(--header_height);
-    right: 0;
-    width: 50%;
-    background-color: var(--blue);
+.dropdown-buttons{
+    height: var(--header_height);
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-buttons:hover{
+    cursor: pointer;
 }
 
 .dropdown-menu{
+    position: absolute;
+    top: var(--header_height);
+    background-color: var(--blue);
     list-style: none;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 1fr;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown-menu.show{
+    display: flex;
 }
 
 .dropdown-menu-li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown-menu-li a{
     color: var(--white);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.dropdown-menu-li a:hover{
+    text-decoration: underline;
 }
 
 #burger-menu{
@@ -121,24 +148,22 @@
 /* Responsiveness */
 @media screen and (max-width: 640px){
     #nav-list{
-        position: absolute;
+        position: fixed;
         top: var(--header_height);
-        width: fit-content;
+        width: 100%;
         height: 100vh;
         right: 0;
         flex-direction: column;
         background-color: var(--blue);
+        transform: translateX(100%);
     }
 
     .nav-items{
         color: var(--white);
     }
 
-    #dropdown-div{
-        position: absolute;
-        top: var(--header_height);
-        right: 35%;
-        margin-right: 0;
+    .dropdown-menu{
+        position: static;
     }
 
     #burger-menu{

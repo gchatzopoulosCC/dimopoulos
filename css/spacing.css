@@ -43,11 +43,7 @@
     margin-left: var(--space-s);
 }
 
-.dropdown-div{
-    padding: var(--space-m) 0;
-}
-
-l.dropdown-menu{
+.dropdown-menu{
     padding: var(--space-s) 0;
 }
 
@@ -71,6 +67,5 @@ l.dropdown-menu{
 @media screen and (max-width: 640px){
     #nav-list{
         margin-right: 0;
-        padding-right: var(--space-l);
     }
 }
