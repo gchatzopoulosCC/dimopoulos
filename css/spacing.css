@@ -70,3 +70,21 @@
         margin-right: 0;
     }
 }
+
+
+/* Footer */
+.doc-footer{
+    padding: var(--space-l) 0;
+}
+
+.footer-div{
+    margin: 0 var(--space-l);
+}
+
+.footer-div h3{
+    margin-bottom: var(--space-l);
+}
+
+.footer-div li{
+    margin-bottom: var(--space-2xs);
+}
