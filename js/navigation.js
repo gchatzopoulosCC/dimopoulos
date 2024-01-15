@@ -16,7 +16,7 @@ for (let i = 1; i <= clubs_hrefs.length; i++) {
 
 
 // Dropdown content
-const dropdowns = document.querySelectorAll(".dropdowns");
+const dropdowns = document.querySelectorAll(".dropdown");
 
 // When the user hovers over a menu display the correct content
 dropdowns.forEach(dropdown => {
@@ -44,26 +44,29 @@ dropdowns.forEach(dropdown => {
             dropdownInfo = [""];
         }
 
-        // Clear before adding content
-        menu.innerHTML = " ";
-        dropdownContent(menu, dropdownInfo, hrefs);
+    // Clear before adding content
+    dropdownContent(menu, dropdownInfo, hrefs);
 
-        // Show and hide the menu using the buttons
-        const btn = dropdown.querySelector('.dropdown-buttons');
-        btn.onmouseover = function(){menu.classList.add('show');}
-        btn.onmouseout = function(){menu.classList.remove('show');}
-        
-        btn.onclick = function(){menu.classList.toggle('show');}
-        
-        // Show and hide the menu when the user uses the menu
-        menu.onmouseover = function(){menu.classList.add('show');}
-        menu.onmouseout = function(){menu.classList.remove('show');}
+    // Show and hide the menu using the buttons
+    const btn = dropdown.querySelector('.dropdown-button');
+    // Desktop
+    btn.addEventListener('mouseover', () => toggleMenu(menu, !isMobile()));
+    btn.addEventListener('mouseout', () => toggleMenu(menu, false));
+
+    // Mobile
+    btn.addEventListener('click', () => {
+        if (isMobile()) menu.classList.toggle("show");
+    });
+    
+    // Show and hide the menu when the user uses the menu
+    menu.addEventListener('mouseover', () => toggleMenu(menu, true));
+    menu.addEventListener('mouseout', () => toggleMenu(menu, false));
 });
 
 // Burger menu
-const burgerMenu = document.querySelector("#burger-menu");
-const burgerBars = document.querySelectorAll(".burger-bars");
-const navList = document.querySelector("#nav-list");
+const burgerMenu = document.querySelector(".burger-menu");
+const burgerBars = document.querySelectorAll(".burger-bar");
+const navList = document.querySelector(".nav-list");
 burgerMenu.onclick = function(){
     burgerBars.forEach(bar => bar.classList.toggle('clicked'));
     navList.classList.toggle('show');
@@ -76,4 +79,17 @@ function dropdownContent(menu, dropdownInfo, hrefs) {
     }
 }
 
+// Hide or show the menu
+function toggleMenu(menu, show) {
+    if (show) {
+        menu.classList.add("show");
+    } else {
+        menu.classList.remove("show");
+    }
+}
+
 // Check if the user is on mobile device
+function isMobile() {
+    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return regex.test(navigator.userAgent);
+}

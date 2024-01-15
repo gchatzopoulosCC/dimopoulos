@@ -23,16 +23,16 @@ body{
 
 
 /* Nav */
-#logo{
+.logo{
     font-size: var(--step-3);
 }
 
-.nav-items{
+.nav-item{
     font-size: var(--step-1);
     font-weight: 500;
 }
 
-.dropdown-buttons{
+.dropdown-button{
     font-weight: 500;
 }
 

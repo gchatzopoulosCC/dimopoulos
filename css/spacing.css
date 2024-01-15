@@ -27,19 +27,19 @@
 
 
 /* Nav */
-#logo{
+.logo{
     margin-left: var(--space-l);
 }
 
-#nav-list{
+.navigation{
     margin-right: var(--space-l);
 }
 
-.nav-items{
+.nav-item{
     padding: 0 var(--space-s);
 }
 
-.nav-icons{
+.nav-icon{
     margin-left: var(--space-s);
 }
 
@@ -51,15 +51,11 @@
     margin: var(--space-xs);
 }
 
-#burger-menu{
-    margin-right: var(--space-l);
-}
-
-.burger-bars{
+.burger-bar{
     margin-bottom: var(--space-3xs);
 }
 
-.burger-bars:last-child{
+.burger-bar:last-child{
     margin: 0;
 }
 
