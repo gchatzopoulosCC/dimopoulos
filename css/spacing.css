@@ -85,3 +85,21 @@
     margin-bottom: var(--space-2xs);
 }
 
+/* Chatzopoulos profile */
+.ch-general-section{
+    margin: var(--space-l) 0;
+}
+
+
+.ch-general-section i{
+    margin: 0 var(--space-xs);
+}
+
+.ch-general-section p, .ch-general-section span{
+    margin: 0 var(--space-l);
+}
+
+.ch-general-section h2{
+    margin: var(--space-m);
+    margin-top: 0;
+}

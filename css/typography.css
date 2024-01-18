@@ -44,3 +44,24 @@ body{
 .footer-div h3{
     font-size: var(--step-3);
 }
+
+/* Chatzopoulos personal */
+.ch-general-section h1{
+    font-size: var(--step-4);
+}
+
+.ch-general-section h2{
+    font-size: var(--step-3);
+}
+
+.ch-general-section i{
+    font-size: var(--step-5)
+}
+
+.ch-general-section span{
+    font-size: var(--step-3);
+}
+
+.ch-general-section p{
+    font-size: var(--step-1);
+}
