@@ -111,13 +111,13 @@
 }
 
 .burger-menu:hover .burger-bar{
-    background-color: var(--dark_blue);
+    background-color: var(--white);
 }
 
 .burger-bar{
     transition: var(--fast);
     display: block;
-    background-color: var(--blue);
+    background-color: var(--white);
     width: inherit;
     height: 3.2px;
     border-radius: 1em;
@@ -152,7 +152,7 @@
         max-height: none;
         right: 0;
         flex-direction: column;
-        background-color: var(--blue);
+        background-color: var(--dark_blue);
         transform: translateX(100%);
         overflow-y: auto;
     }
@@ -171,5 +171,13 @@
 
     .burger-menu{
         display: block;
+    }
+
+    .burger-bar.clicked{
+        transform: translate(0, .45vh) rotate(-45deg);
+    }
+
+    .burger-bar.clicked:last-child{
+        transform: translate(0, -.45vh) rotate(45deg);
     }
 }

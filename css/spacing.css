@@ -1,3 +1,4 @@
+@import url('/css/general_styles.css');
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,4 */
 
 :root {
@@ -27,6 +28,10 @@
 
 
 /* Nav */
+.doc-header{
+    margin-bottom: var(--header-height);
+}
+
 .logo{
     margin-left: var(--space-l);
 }
@@ -51,12 +56,8 @@
     margin: var(--space-xs);
 }
 
-.burger-bar{
+.burger-bar:not(:last-child){
     margin-bottom: var(--space-3xs);
-}
-
-.burger-bar:last-child{
-    margin: 0;
 }
 
 /* Responsiveness */
@@ -200,3 +201,22 @@ p {
 .find-me-SM {
     padding: var(--space-m) 0;
 }
+
+
+/* Footer */
+.doc-footer{
+    padding: var(--space-l) 0;
+}
+
+.footer-div{
+    margin: 0 var(--space-l);
+}
+
+.footer-div h3{
+    margin-bottom: var(--space-l);
+}
+
+.footer-div li{
+    margin-bottom: var(--space-2xs);
+}
+
