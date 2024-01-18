@@ -1,0 +1,90 @@
+@import url('/css/general_styles.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('/css/spacing.css');
+
+.title {
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--dark_blue);
+    background-color: var(--white);
+}
+
+.title, .subtitle{
+    border-radius: .1em;
+    opacity: .95;
+    text-align: center;
+}
+
+.about-me-section {
+    align-items: center;
+    width: 100%;
+    color: var(--dark_blue);
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.personal-info{
+    border: 4px solid var(--dark_blue);
+    width: calc(100% - calc(2* var(--space-l)));
+    padding: 100% 0;
+}
+
+table, th, td {
+    border: 5px double var(--light_blue);
+}
+
+.table-interests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+    margin-bottom: 100px;
+}
+
+th {
+    background-color: var(--dark_blue);
+    color: var(--white);
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    height: 50px;
+    vertical-align: middle;
+    padding: 0;
+}
+
+embed {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: none;
+}
+
+tr:hover {background-color: var(--beige);}
+
+.social-media {
+   justify-content: center;
+    text-align: center;
+}  
+
+.SM-text {
+    text-align: center;
+    color: var(--dark_blue);
+}
+
+.find-me-SM {
+    color: var(--dark_blue);
+    text-align: center;
+    width: 100%;
+}

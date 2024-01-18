@@ -1,7 +1,6 @@
 /* Imports */
 @import url('general_styles.css');
 
-
 .doc-header{
     width: 100%;
     height: var(--header_height);
@@ -11,11 +10,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--dark_blue);
+    z-index: 10;
 }
 
 .logo{
-    color: var(--blue);
+    color: var(--grey);
 }
 
 .navigation{
@@ -37,7 +37,7 @@
 }
 
 .nav-item{
-    color: var(--blue);
+    color: var(--grey);
     text-decoration: none;
     height: var(--header_height);
     display: flex;
@@ -47,9 +47,9 @@
 }
 
 .nav-item:hover{
-    background-color: var(--blue);
+    background-color: var(--grey);
     cursor: pointer;
-    color: var(--light_blue);
+    color: var(--blue);
 }
 
 .dropdown{
@@ -73,7 +73,7 @@
 .dropdown-menu{
     position: absolute;
     top: var(--header_height);
-    background-color: var(--blue);
+    background-color: var(--dark_blue);
     list-style: none;
     display: none;
     flex-direction: column;
@@ -91,12 +91,13 @@
 }
 
 .dropdown-menu-li a{
-    color: var(--white);
+    color: var(--grey);
     text-decoration: none;
     text-transform: capitalize;
 }
 
 .dropdown-menu-li a:hover{
+    color: var(--light_blue);
     text-decoration: underline;
 }
 
@@ -110,7 +111,7 @@
 }
 
 .burger-menu:hover .burger-bar{
-    background-color: var(--light_blue);
+    background-color: var(--dark_blue);
 }
 
 .burger-bar{
@@ -147,11 +148,13 @@
         position: fixed;
         top: var(--header_height);
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
+        max-height: none;
         right: 0;
         flex-direction: column;
         background-color: var(--blue);
         transform: translateX(100%);
+        overflow-y: auto;
     }
 
     .nav-item{

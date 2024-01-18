@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thessaloniki</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/spacing.css">
+    <script src="https://kit.fontawesome.com/6da033d502.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href = "/css/clubs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="doc-header">
+        <i class="fa-solid fa-chess-rook logo"></i>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li data-name="restaurants" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Restaurants
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="bars" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Bars
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="clubs" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Clubs
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>        
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-menu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar burger-bar-middle"></div>
+                <div class="burger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="doc-main">
+        <section class="clubs-generic-section">
+            <div class="banner"> 
+                <!--I create a banner in which i demonstrate the title of the club, as well as an explainatory subtitle-->
+                <h1 class="clubs-title">CASPER</h1>
+                <h2>Greek Music | 25-45 y.o. | 20€ p.p. </h2>
+            </div>
+            <div class="clubs-info">
+                <!--I insert the logo of the club, and align the introductory text next to it-->
+                <div class="clubs-images">
+                    <img src="/images/IMG_0892.jpg" alt="Casper Logo">
+                </div>
+                <p>
+                    Casper, or Casper at Verykoko which is its full name, 
+                    is one of the longest operating clubs in the city of 
+                    Thessaloniki. It consists of a space for 900 people 
+                    of all ages since it is a club with greek music. 
+                    The club is open from Tuesday to Sunday after 23:00 
+                    and offers a plethora of events on various different 
+                    days. On Tuesday you can enjoy popular Greek singer 
+                    <strong>Ilias Kampakakis</strong> and on Sundays 
+                    <strong>Giorgos Sampanis</strong>. The remaining days 
+                    you can enjoy mainstream DJ's such as DJ Ferfiris. 
+                    It is, in my opinion, the best club in Thessaloniki 
+                    if you enjoy Greek Music.
+                </p>  
+                
+                <div class="clubs-images">
+                    <img src="/images/caspergraf.jpg" alt="Casper Graffity">
+                </div>
+            </div>
+        </section>
+
+        <section class="clubs-generic-section clubs-events">
+            <h2>Casper all-week walkthough</h2>
+            <!--I create a table in which I demonstrate the events the club has during the week-->
+            <table>
+                <tr> 
+                    <th>Day</th>
+                    <th>Event</th>
+                    <th>Prices</th>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Live Ilias Kampakakis</td>
+                    <td>120€ per standard bottle</td>
+                </tr> 
+                <tr>
+                    <td>Wednesday-Saturday</td>
+                    <td>DJ Ferfiris and more</td>
+                    <td>90€ per standard bottle</td>
+                </tr> 
+                <tr>
+                    <td>Sunday</td>
+                    <td>Live Giorgos Sampanis</td>
+                    <td>120€ per standard bottle</td>
+                </tr>       
+            </table>
+        </section>    
+
+        <section class="clubs-generic-section clubs-carousel">
+            <h2>Some clips</h2>
+            <!--I create a carousel with videos I have recorded at the club-->
+            <div class="clubs-videoframe">
+                <i class="clubs-carousel-previous fa-solid fa-circle-arrow-left carousel-buttons" data-action="previous"></i>
+                <div class="clubs-show-video-div" id="casper">
+                    <!-- Videos will be created dynamically -->
+                </div>
+                <i class="fa-solid fa-circle-arrow-right carousel-buttons clubs-carousel-next" data-action="next"></i>
+            </div>
+        </section>
+        <section class="clubs-generic-section clubs-fb-section">
+            <h2>Find them on facebook</h2>
+                <!--I embed the clubs social media / webpage into the website-->
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCasperThessaloniki%2F%3Flocale2%3Del_GR%26_rdr&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>     
+        </section>
+        <section class="clubs-rate-map">  
+            <div class="clubs-rate-explain">
+                <div class="myrating">
+                    <h2>My rating</h2>
+                    <!--I create 5 rating star emojis, in which the x out of five will be filled with yellow color depending on my rating-->
+                    <div class="stars">
+                        <span class = "fa fa-star ok"></span>
+                        <span class = "fa fa-star ok"></span>
+                        <span class = "fa fa-star ok"></span>
+                        <span class = "fa fa-star ok"></span>
+                        <span class = "fa fa-star "></span>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        When evaluating and rating a nightclub experience, various factors come into play, contributing to the overall impression and enjoyment of the night. 
+                        In this case, a 4/5 star rating suggests a highly positive experience with some minor areas for improvement. <br>
+                    </p>
+                    <div class="clubsmore">
+                        <!--The text below will be hidden until the user presses the "Show More" button-->
+                        <h4><br>Atmosphere:</h4>
+                        <p>
+                            <br>
+                            The nightclub's atmosphere likely played a pivotal role in the positive rating. A vibrant and energetic ambiance, 
+                            complemented by well-designed lighting and decor, can significantly enhance the overall experience. 
+                            The atmosphere might have struck the right balance, creating an exciting and immersive environment for patrons.
+                            <br>
+                        </p>
+                        
+                        <h4><br>Music and Entertainment:</h4>
+                        <p>        
+                            <br>            
+                            A critical aspect of any nightclub is the quality of its music and entertainment. 
+                            A 4-star rating indicates that the venue likely delivered a satisfying mix of music genres, catering to a diverse audience. 
+                            The DJ or live performances might have successfully kept the crowd engaged and energized throughout the night.
+                            <br>
+                        </p>   
+                        <h4><br>Service and Staff:</h4>
+                        <p>
+                            <br>
+                            The professionalism and friendliness of the staff often contribute significantly to the overall impression of a nightclub. 
+                            A 4-star rating could indicate that the staff provided attentive and efficient service, 
+                            contributing to a positive and enjoyable experience for patrons.
+                            <br>
+                        </p>
+                        <h4><br> Drinks and Pricing:</h4>
+                        <p>
+                            <br>
+                            The quality of drinks and their affordability play a role in determining the overall value of the experience. 
+                            A 4-star rating may suggest that the nightclub offered a good selection of drinks, 
+                            possibly at reasonable prices, contributing to the overall satisfaction of patrons.
+                            <br>
+                        </p>   
+                        <p>
+                            <br><strong>In summary,</strong> a 4/5 star rating for a nightclub implies a highly enjoyable experience with a few minor areas for improvement. 
+                            It suggests that the venue has successfully delivered on several key aspects, 
+                            creating an overall positive and memorable night out for patrons.
+                        </p>
+                    </div>
+                    <button type="button" class="showmorebutton" value = 'open'>Show More</button>
+                </div>
+            </div>
+            <div class="mapiframe">
+                <!-- An iframe with the google maps location of the club -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.7432366070398!2d22.934181475494366!3d40.63554414229354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a83909e94b28eb%3A0x5685cd881d145c46!2sCasper!5e0!3m2!1sen!2sgr!4v1705183706387!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>  
+        <section class="clubs-booking">
+            <h2 class="reservation-text">Make a Reservation</h2>
+            <div class="cardbook">
+                <div class="cardcontent">
+                    <form>
+                        <!--I will create a form for the user to enter details in order to reserve a table at the club and a confirmation message is shown-->
+                        <div class="form-row">
+                            <select name="day">
+                                <option value = "day-select">Day</option>
+                                <option value = "Tuesday">Tuesday</option>
+                                <option value = "Wednesday">Wednesday</option>
+                                <option value = "Thursday">Thursday</option>
+                                <option value = "Friday">Friday</option>
+                                <option value = "Saturday">Saturday</option>
+                                <option value = "Sunday">Sunday</option>
+                            </select>
+                            <select name="place">
+                                <option value="place-select">Place</option>
+                                <option value="1st Floor">1st Floor</option>
+                                <option value="2nd Floor">2nd Floor</option>
+                                <option value="VIP">VIP</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="text" placeholder="Enter Phone Number">
+                        </div>
+                        <div class="form-row">
+                            <input type="number" placeholder="How many Persons?" min = "2" max="12">
+                            <input type="submit" value="BOOK" onclick="bookingconfirmation()"> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>       
+    </main>
+    <footer id="doc-footer">
+        <!-- Not finished yet -->
+    </footer>
+</body>
+
+<!-- Js files -->
+<script type="module" src="/js/general.js"></script>
+<script type="module" src="/js/navigation.js"></script>
+<script src="/js/clubs.js"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="xGQdL1t2"></script>
+</html>

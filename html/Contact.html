@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thessaloniki</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/spacing.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://kit.fontawesome.com/6da033d502.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="doc-header">
+        <i class="fa-solid fa-chess-rook logo"></i>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li data-name="restaurants" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Restaurants
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="bars" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Bars
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="clubs" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Clubs
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>        
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-menu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar burger-bar-middle"></div>
+                <div class="burger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="doc-main">
+        <div class="banner"> 
+            <!--I create a banner with the title of the page-->
+            <h1 class="contact-title">Contact Us</h1>
+        </div>
+        <section class="contact-info">
+            <div class="contact-text">
+                    <!--I insert my contact information-->
+                    <h2>Welcome to Shqiperia United's Thessaloniki Travel Guide for students!</h2> 
+                    
+                    <p>
+                        We value your interest and are here to assist you. 
+                         Whether you have inquiries about our products, services, or any general questions, 
+                         we encourage you to get in touch with us. Your satisfaction is our priority.
+                    </p> 
+                    
+                    <h2>Contact Information:</h2>
+                    
+                    <ul>
+                        <li>Customer Support Email: dkaltsios@york.citycollege.eu</li>
+                        <li>Phone: 6978228022</li>
+                        <li>Business Hours: Monday - Friday, 9:00 AM - 6:00 PM</li> 
+                        <li>Visit Us: Leontos Sofou 3, Thessaloniki</li>
+                    </ul>
+                    
+            </div>
+            <div class="contact-maps">
+                <!--I insert an iframe with the location of City College on Google Maps-->
+                <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.656171123215!2d22.934309075600055!3d40.63746397140493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839a74068237b%3A0x8cbda0f741adff70!2sCITY%20College%2C%20University%20of%20York%20Europe%20Campus!5e0!3m2!1sen!2sgr!4v1705404122656!5m2!1sen!2sgr" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <div class="text-about-form">
+            <h2>Contact Form:</h2>
+            <p>
+            Alternatively, you can use the contact form below to send us a detailed message. 
+            Please provide: 
+            </p>
+            <ul class="form-req">
+                <li>Your contact information</li> 
+                <li>Your Email address</li> 
+                <li>A brief description of your inquiry, and any relevant details.</li>
+            </ul>
+            <p><br>
+            We appreciate your feedback and strive to respond promptly.                    
+            Thank you for choosing Shqiperia United, 
+            we look forward to hearing from you and serving your needs.
+            </p>
+            <p>
+            Best regards,
+            Shqiperia United
+            </p>
+        </div>
+        <section class="contactform">
+            <!--I create a form that a user completes, and a confirmation message that an email has been sent to us is shown-->
+            <h2 class="EmailUs-text">Email Us</h2>
+            <div class="Emailcontent">
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="Enter Name">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Enter Text">
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="SEND" onclick="emailconfirmation()">
+                    </div>
+                </form>
+            </div>
+        </section> 
+    </main>
+    <footer class="doc-footer">
+        <!-- Not finished yet -->
+    </footer>
+</body>
+
+<!-- Js files -->
+<script type="module" src="/js/general.js"></script>
+<script type="module" src="/js/navigation.js"></script>
+<script src="/js/contact.js"></script>
+</html>

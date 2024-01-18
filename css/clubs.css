@@ -1,0 +1,266 @@
+@import url('/css/general_styles.css');
+
+.clubs-generic-section{
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner{
+    position: relative;
+    height: auto;
+    max-width: 60%;
+    border: .1rem solid var(--dark_blue);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clubs-title{
+    color: var(--dark_blue);
+}
+
+.banner h2{
+    text-decoration: none;
+}
+
+.clubs-info{
+    color: var(--dark_blue);
+    height: 70%;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubs-info img {
+    height: 90%;
+    width: 90%;
+    float: left;
+}
+
+.clubs-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.clubs-events{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clubs-generic-section h2{
+    color: var(--dark_blue);
+}
+
+table, th, td {
+    border: 5px double var(--light_blue);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+th {
+    background-color: var(--light_blue);
+    color: var(--white);
+}
+
+td {
+    text-align: center;
+    height: 50px;
+    vertical-align: middle;
+}
+
+tr:hover {background-color: var(--beige);}
+
+.clubs-carousel, .clubs-videoframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clubs-carousel{
+    flex-direction: column;
+}
+
+.clubs-videoframe{
+    height: 60%;
+    width: 60%;
+}
+
+.clubs-carousel-video{
+    height: 50%;
+    width: inherit;
+}
+
+.carousel-buttons{
+    cursor: pointer;
+    color: var(--dark_blue);
+    transition: var(--fast);
+    opacity: .7;
+}
+
+.carousel-buttons:hover{
+    opacity: 1;
+}
+
+.clubs-show-video-div{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubs-fb-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-page {
+    width: 100%;
+    height: 80%;
+}
+
+embed {
+    width: 80%;
+    height: 60vw;
+}
+
+.clubs-booking {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_blue);
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--grey);
+}
+
+.reservation-text{
+    font-size: xx-large;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--light_blue);
+    font-weight: 300;
+}
+
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: var(--light_blue);
+}
+
+form input[type = submit]{
+    color: var(--light_blue);
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+.cardcontent{
+    grid-template-columns: 100%;
+    width: 100vw;
+}
+
+.clubs-rate-map {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    text-decoration:underline;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+.clubs-rate-explain{
+    align-items: center;
+    justify-content: center;
+    height:70%;
+    text-align: center;
+    color: var(--dark_blue);
+}
+.mapiframe {
+    height:100%;
+}
+.ok {
+    color: yellow;
+}    
+
+.clubsmore {
+    display: none;
+}
+
+.clubsmore.more{
+    display: block;
+}
+
+.showmorebutton {
+    background-color: var(--dark_blue);
+    color: var(--grey);
+    border: none;
+    box-shadow: 2px 2px var(--light_blue);
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    [class="clubs-info"]{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    [class="mapiframe"] {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    [class="fb-page"] {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .clubs-videoframe {
+        width: 100%;
+    }
+
+    [class="clubs-rate-map"] {
+        flex-direction: column;
+    }
+}
