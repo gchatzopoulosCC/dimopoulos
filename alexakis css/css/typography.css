@@ -44,3 +44,8 @@ body{
 .footer-div h3{
     font-size: var(--step-3);
 }
+
+/* Bars Ntinos */
+.bars-location h2{
+    font-size: var(--step-3);
+}

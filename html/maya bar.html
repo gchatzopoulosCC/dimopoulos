@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thessaloniki</title>
+    <link rel="stylesheet" href="/alexakis css/css/navigation.css">
+    <link rel="stylesheet" href="/alexakis css/css/reset.css">
+    <link rel="stylesheet" href="/alexakis css/css/footer.css">
+    <link rel="stylesheet" href="/alexakis css/css/typography.css">
+    <link rel="stylesheet" href="/alexakis css/css/spacing.css">
+    <link rel="stylesheet" href="/alexakis css/css/general_styles.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script src="https://kit.fontawesome.com/6da033d502.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="doc-header">
+        <i class="fa-solid fa-chess-rook logo"></i>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item">Home</a></li>
+                <li data-name="restaurants" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Restaurants
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="bars" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Bars
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li data-name="clubs" class="dropdown nav-item">
+                    <h3 class="dropdown-button">
+                        Clubs
+                        <i class="nav-icon fa-solid fa-caret-down"></i>
+                    </h3>        
+                    <!-- Dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- Content will be added dynamically -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-item">Contact</a>
+                </li>
+            </ul>
+            <div class="burger-menu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar burger-bar-middle"></div>
+                <div class="burger-bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="doc-main">
+  <section aria-label="Maya pictures">
+    <div class="carousel" data-carousel>
+      <button class="bars-carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="bars-carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+          <li class="slide" data-active>
+              <img src="images/maya 1.jpg" alt="Maya bar">
+            </li>
+            <li class="slide">
+                <img src="images/maya2.jpg" alt="Maya bar">
+            </li>
+            <li class="slide">
+                <img src="images/maya3.webp" alt="Maya bar">
+            </li>
+        </ul>
+    </div>
+    
+    <section class="bars-location">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.7538356354976!2d22.94394447651339!3d40.591188745002036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a83ed3e3a7bab1%3A0xe65215fd428eeac9!2sSHARK%20Bar%20%7C%20Restaurant%20-%20Thessaloniki!5e0!3m2!1sel!2sgr!4v1705545603229!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <p></p>
+  </section>
+    </main>
+    <footer class="doc-footer">
+        <div class="footer-contact footer-div">
+            <h3>Contact</h3>
+            <ul>
+                <li>
+                    <a href="mailto:sqiperiaunited@york.citycollege.eu">sqiperiaunited@york.citycollege.eu</a>
+                </li>
+                <li>
+                    <a href="#">6977777777</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-portfolio footer-div">
+            <h3>Portfolio</h3>
+            <ul>
+                <li>
+                    <a href="#" target="_blank">Take me to the Portfolio page</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-aboutus footer-div">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Chatzopoulos Giorgos</a></li>
+                <li><a href="#">Mitsakas Petros</a></li>
+                <li><a href="#">Kaltsios Dimitris</a></li>
+                <li><a href="#">Dembas Stavros</a></li>
+                <li><a href="#">Alexakis Konstantinos</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<!-- Js files -->
+<script type="module" src="/js/general.js"></script>
+<script type="module" src="/js/navigation.js"></script>
+<script type="module" src="carousel.js"></script>
+
+</html>
+

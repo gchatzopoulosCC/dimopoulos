@@ -1,17 +1,14 @@
 // Navigation variables
 const restaurants = [];
 const restaurants_hrefs = ['#', "#", '#', '#', '#']
-const bars = [];
-const bars_hrefs = ['#', "#", '#', '#', '#', '#']
+const bars = ['shaka', "nohelia", 'maya bar', 'mira', 'shark bar', 'sanaa Coast'];
+const bars_hrefs = ['#', "#", '#', '#', '#'];
 const clubs = ["jadore", "suita", "nhaos", "casper", "aigli", "pili axiou"];
 const clubs_hrefs = ['#', '#', "#", '#', '#', '#']
 
 // Temp
 for (let i = 1; i <= restaurants_hrefs.length; i++) {
     restaurants.push(`restaurant ${i}`);
-}
-for (let i = 1; i <= clubs_hrefs.length; i++) {
-    bars.push(`bar ${i}`);
 }
 
 

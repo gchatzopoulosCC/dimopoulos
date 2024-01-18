@@ -85,3 +85,12 @@
     margin-bottom: var(--space-2xs);
 }
 
+
+/* Bars Ntinos */
+.bars-carousel-buttons{
+    margin: var(--space-l);
+}
+
+.bars-location h2{
+    margin: var(--space-m) 0;
+  }
