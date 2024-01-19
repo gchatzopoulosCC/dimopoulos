@@ -1,3 +1,5 @@
+// Mitsakas
+
 // Show more/less reviews
 const showMoreButton = document.querySelector(".show-more-button");
 const showMoreReviewDiv = document.querySelector(".reviews-div.more")

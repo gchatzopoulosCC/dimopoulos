@@ -1,3 +1,5 @@
+// Chatzopoulos
+
 // Navigation variables
 const restaurants = ['loupino', 'manitari', 'mari e monti', 'miami seafood'];
 const restaurants_hrefs = ['/html/restaurants_demba/loupino.html', "/html/restaurants_demba/manitari.html", '/html/restaurants_demba/mariemonti.html', '/html/restaurants_demba/miami_seafood.html']

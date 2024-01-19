@@ -1,3 +1,4 @@
+// Alexakis
 const buttons = document.querySelectorAll(".bars-carousel-button");
 
 buttons.forEach(button => {

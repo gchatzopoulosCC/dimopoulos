@@ -1,3 +1,4 @@
+/* Chatzopoulos */
 @import url('/other/css/general_styles.css');
 /* @link https://utopia.fyi/space/calculator?c=320,18,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,4 */
 
@@ -27,7 +28,7 @@
 }
 
 
-/* Nav */
+/* Nav Chatzopoulos */
 .doc-header{
     margin-bottom: var(--header-height);
 }
@@ -67,7 +68,7 @@
     }
 }
 
-/* Home */
+/* Kaltsios */
 .title, .subtitle{
     padding: var(--space-xs);
 }
@@ -159,9 +160,6 @@ h2 {
     }
 }
 
-
-/* CONTACT */
-
 .contact-info {
     margin-top: var(--space-m);
     margin-bottom: var(--space-m);
@@ -203,7 +201,7 @@ p {
 }
 
 
-/* Footer */
+/* Footer Chatzopoulos */
 .doc-footer{
     padding: var(--space-l) 0;
 }
@@ -283,7 +281,7 @@ p {
     margin: 0 var(--space-s);
 }
 
-/* Bars Ntinos */
+/* Bars Alexakis */
 .bars-carousel-buttons{
     margin: var(--space-l);
 }
@@ -305,7 +303,7 @@ p {
 }
 
 
-/* Restaurants */
+/* Restaurants Demba */
 
 .restaurants-generic-section{
     padding: var(--space-l) 0;

@@ -1,3 +1,5 @@
+// Kaltsios + Chatzopoulos
+
 const images = document.querySelectorAll(".banner-carousel-img");
 let index = 1;
 let previousIndex = index - 1;
