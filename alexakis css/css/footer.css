@@ -1,0 +1,37 @@
+@import url('/other/css/general_styles.css');
+
+.doc-footer{
+    width: 100%;
+    min-height: 30vh;
+    height: auto;
+    max-height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark_blue);
+}
+
+.footer-div h3{
+    color: var(--light_blue);
+}
+
+.footer-div ul{
+    list-style: none;
+}
+
+.footer-div a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-div a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 640px){
+    .doc-footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

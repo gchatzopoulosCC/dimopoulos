@@ -1,0 +1,240 @@
+@import url('/other/css/general_styles.css');
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.25,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,4 */
+
+:root {
+    --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+    --space-2xs: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+    --space-xs: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+    --space-s: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --space-m: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+    --space-l: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+    --space-xl: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+    --space-2xl: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+    --space-3xl: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+  
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem);
+    --space-2xs-xs: clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem);
+    --space-xs-s: clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem);
+    --space-s-m: clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem);
+    --space-m-l: clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem);
+    --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem);
+    --space-xl-2xl: clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem);
+    --space-2xl-3xl: clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem);
+  
+    /* Custom pairs */
+    --space-s-l: clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem);
+}
+
+
+/* Nav */
+.doc-header{
+    margin-bottom: var(--header-height);
+}
+
+.logo{
+    margin-left: var(--space-l);
+}
+
+.navigation{
+    margin-right: var(--space-l);
+}
+
+.nav-item{
+    padding: 0 var(--space-s);
+}
+
+.nav-icon{
+    margin-left: var(--space-s);
+}
+
+.dropdown-menu{
+    padding: var(--space-s) 0;
+}
+
+.dropdown-menu-li{
+    margin: var(--space-xs);
+}
+
+.burger-bar:not(:last-child){
+    margin-bottom: var(--space-3xs);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 640px){
+    #nav-list{
+        margin-right: 0;
+    }
+}
+
+/* Home */
+.title, .subtitle{
+    padding: var(--space-xs);
+}
+
+.home-info {
+    padding: var(--space-l);
+}
+
+/* CLUBS */
+
+.banner{
+    padding: var(--space-l);
+    margin: var(--space-l-xl) auto;
+}
+
+.clubs-title{
+    margin-bottom: var(--space-s);
+}
+
+.casper-info{
+    padding: 0 var(--space-l);
+}
+
+.casper-info p{
+    margin: 0 var(--space-m);
+    padding: var(--space-l);
+}
+
+.clubs-generic-section      {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-events {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-carousel     {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-insta-section {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-booking {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.clubs-rate-map {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+    padding: 0;
+}
+
+.myrating {
+    margin-bottom: var(--space-s-l);
+}
+
+.stars {
+    margin-top: var(--space-m);
+}
+
+h2 {
+    margin-bottom: var(--space-m);
+}
+
+.clubs-events h2{
+    margin-bottom: var(--space-xl);
+    text-decoration: underline;
+}
+
+.clubs-carousel-previous{
+    margin-left: var(--space-l);
+}
+
+.clubs-carousel-next{
+    margin-right: var(--space-l);
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    .clubs-info p {
+        margin: var(--space-l);
+    }
+
+    .clubs-rate-explain {
+        margin-bottom: var(--space-m);
+    }
+}
+
+
+/* CONTACT */
+
+.contact-info {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.contact-text {
+    padding:  var(--space-m);
+}
+
+.contactform {
+    padding:  var(--space-m);
+    margin-top: var(--space-m);
+}
+
+p {
+    margin-bottom: var(--space-m);
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    [class*="contact-text"] {
+       padding: var(--space-m);
+    }
+}
+
+/* Kaltsios Personal */
+
+.title, .subtitle{
+    padding: var(--space-xs) 0;
+}
+
+.about-me-section {
+    padding: var(--space-s) 0;
+    margin-bottom: var(--space-m);
+}
+
+.find-me-SM {
+    padding: var(--space-m) 0;
+}
+
+
+/* Footer */
+.doc-footer{
+    padding: var(--space-l) 0;
+}
+
+.footer-div{
+    margin: 0 var(--space-l);
+}
+
+.footer-div h3{
+    margin-bottom: var(--space-l);
+}
+
+.footer-div li{
+    margin-bottom: var(--space-2xs);
+}
+
+/* Chatzopoulos profile */
+.ch-general-section{
+    margin: var(--space-l) 0;
+}
+
+
+.ch-general-section i{
+    margin: 0 var(--space-xs);
+}
+
+.ch-general-section p, .ch-general-section span{
+    margin: 0 var(--space-l);
+}
+
+.ch-general-section h2{
+    margin: var(--space-m);
+    margin-top: 0;
+}
