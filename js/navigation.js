@@ -1,7 +1,7 @@
 // Navigation variables
 const restaurants = [];
 const restaurants_hrefs = ['#', "#", '#', '#', '#']
-const bars = ['shaka', "nohelia", 'maya bar', 'mira', 'shark bar', 'sanaa Coast'];
+const bars = ['shaka', "nohelia", 'maya bar', 'Gorilas', 'shark bar', 'sanaa Coast'];
 const bars_hrefs = ['#', "#", '#', '#', '#'];
 const clubs = ["jadore", "suita", "nhaos", "casper", "aigli", "pili axiou"];
 const clubs_hrefs = ['#', '#', "#", '#', '#', '#']

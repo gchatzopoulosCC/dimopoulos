@@ -91,6 +91,18 @@
     margin: var(--space-l);
 }
 
-.bars-location h2{
+.bar-info h2{
+  margin: var(--space-l) 0;
+ }
+
+ .bars-location h3{
     margin: var(--space-m) 0;
   }
+
+   .info-par p{
+    margin: var(--space-l) 0;
+   }
+   .Alexakis_contact_info h4{
+    margin: var(--space-m) 0;
+   
+    }

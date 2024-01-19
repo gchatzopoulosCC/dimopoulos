@@ -46,6 +46,16 @@ body{
 }
 
 /* Bars Ntinos */
-.bars-location h2{
+.bar-info h2{
+    font-size: var(--step-3);
+   }
+
+   .bars-location h3{
     font-size: var(--step-3);
 }
+.info-par p{
+    margin: var(--space-l) 0;
+   }
+   .Alexakis_contact_info h4{
+    font-size: var(--step-2);
+   }
