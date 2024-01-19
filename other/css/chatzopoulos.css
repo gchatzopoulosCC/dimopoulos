@@ -1,5 +1,4 @@
-@import url('/css/spacing.css');
-@import url('/css/general_styles.css');
+@import url('/other/css/general_styles.css');
 
 #ch-name-container-div{
     display: flex;

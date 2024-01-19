@@ -1,4 +1,5 @@
-@import url('/css/general_styles.css');
+@import url('/other/css/general_styles.css');
+@import url('/other/css/spacing.css');
 
 .clubs-generic-section{
     height: auto;
@@ -69,7 +70,7 @@ table, th, td {
 }
 
 table {
-    width: 100%;
+    width: calc(100% - calc(2 * var(--space-l)));
     margin-bottom: 100px;
 }
 
@@ -126,6 +127,7 @@ tr:hover {background-color: var(--beige);}
 }
 
 .clubs-fb-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,11 +204,11 @@ form input[type = submit]:hover{
     flex-direction: row;
 }
 
-h2 {
+.clubs-generic-section h2 {
     text-decoration:underline;
 }
 
-h3 {
+.clubs-generic-section h3 {
     text-align: center;
     text-decoration: underline;
 }
@@ -217,8 +219,12 @@ h3 {
     text-align: center;
     color: var(--dark_blue);
 }
+
 .mapiframe {
     height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ok {
     color: yellow;
@@ -251,7 +257,7 @@ h3 {
         overflow: hidden;
     }
 
-    [class="fb-page"] {
+    .fb-page {
         width: 100%;
         overflow: hidden;
     }
@@ -262,5 +268,9 @@ h3 {
 
     [class="clubs-rate-map"] {
         flex-direction: column;
+    }
+    
+    .clubs-fb-section iframe, .mapiframe iframe{
+        width: calc(100% - calc(2 * var(--space-l))) !important;
     }
 }
