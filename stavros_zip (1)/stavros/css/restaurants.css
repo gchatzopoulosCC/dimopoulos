@@ -1,0 +1,94 @@
+@import url("/css/general_styles.css");
+
+.restaurants-generic-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurants-generic-section h1, .restaurants-generic-section h2{
+    color: var(--dark_blue);
+}
+
+.restaurants-info-div{
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+    height: fit-content;
+    display: flex;
+    color: var(--dark_blue);
+}
+
+.restaurants-info-div img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restaurants-top-dishes-list{
+    list-style: none;
+    color: var(--blue);
+}
+
+.restaurants-top-dishes-list li{
+    text-transform: capitalize;
+}
+
+.restaurants-review{
+    width: 40%;
+    border-bottom: .1em var(--blue) solid;
+}
+
+.restaurants-review h3, .restaurants-practical-section h3{
+    color: var(--dark_blue);
+}
+
+.restaurants-review p, .restaurants-practical-section ul, .restaurants-practical-section a{
+    color: var(--blue);
+}
+
+.restaurants-practical-section ul{
+    list-style: none;
+}
+
+.restaurants-practical-section a{
+    text-decoration: none;
+}
+
+.restaurants-contact-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurants-social-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.restaurants-location-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurants-location-div iframe{
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+}
+
+@media screen and (max-width: 640px) {
+    .restaurants-info-div{
+        flex-direction: column;
+    }
+
+    .restaurants-info-div img{
+        height: 60vh;
+        width: 100%;
+    }
+}
