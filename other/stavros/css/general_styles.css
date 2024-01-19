@@ -1,0 +1,59 @@
+<<<<<<<< HEAD:alexakis css/css/general_styles.css
+/* Variables */
+:root{
+    /* Header height */
+    --header_height: 13vh;
+
+    /* Colors */
+    --white: #F0F3FA;
+    --grey: #D5DEEF;
+    --light_blue: #8AAEED;
+    --blue: #628ECB;
+    --dark_blue: #395886;
+    --beige: #FFEED9;
+
+    /* Transition */
+    --fast: .2s;
+
+    /* Device sizes */
+    /* Sizes where taken from: https://tailwindcss.com/docs/responsive-design */
+    --s: 640px;
+    --m: 768px;
+    --l: 1024px;
+    --xl: 1280px;
+    --xxl: 1536px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+========
+/* Variables */
+:root{
+    /* Header height */
+    --header_height: 13vh;
+
+    /* Colors */
+    --white: #F0F3FA;
+    --grey: #D5DEEF;
+    --light_blue: #8AAEED;
+    --blue: #628ECB;
+    --dark_blue: #395886;
+    --beige: #FFEED9;
+
+    /* Transition */
+    --fast: .2s;
+
+    /* Device sizes */
+    /* Sizes where taken from: https://tailwindcss.com/docs/responsive-design */
+    --s: 640px;
+    --m: 768px;
+    --l: 1024px;
+    --xl: 1280px;
+    --xxl: 1536px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+>>>>>>>> c0a2f685bd25d5625a4a775a37ce6d59b7891c3c:stavros_zip (1)/stavros/css/general_styles.css

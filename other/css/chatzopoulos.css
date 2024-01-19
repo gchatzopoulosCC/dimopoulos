@@ -1,0 +1,16 @@
+@import url('/other/css/general_styles.css');
+
+#ch-name-container-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark_blue);
+}
+
+.ch-general-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark_blue);
+}
