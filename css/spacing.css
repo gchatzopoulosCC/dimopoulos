@@ -85,3 +85,45 @@
     margin-bottom: var(--space-2xs);
 }
 
+/* Petros */
+
+.generic-section{
+    padding: var(--space-l) 0;
+}
+
+.intro-section h1{
+    margin-bottom: var(--space-l);
+}
+
+.generic-section h2{
+    margin-bottom: var(--space-m);
+}
+
+.about-section p{
+    margin: 0 var(--space-l);
+}
+
+.review{
+    margin: var(--space-m) auto;
+    padding: var(--space-s);
+}
+
+.review-name{
+    margin-bottom: var(--space-3xs);
+}
+
+.show-more-button{
+    padding: var(--space-2xs) 0;
+}
+
+.contact-list li{
+    margin-bottom: var(--space-3xs);
+}
+
+.contact-social-div{
+    padding: var(--space-m);
+}
+
+.contact-social-div i{
+    margin: 0 var(--space-s);
+}

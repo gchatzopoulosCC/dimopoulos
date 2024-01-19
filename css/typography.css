@@ -44,3 +44,33 @@ body{
 .footer-div h3{
     font-size: var(--step-3);
 }
+
+/* Clubs Petros */
+
+.intro-section h1{
+    font-size: var(--step-4);
+}
+
+.generic-section h2{
+    font-size: var(--step-3);
+}
+
+.generic-section p{
+    font-size: var(--step-0);
+}
+
+.review-name{
+    font-size: var(--step-1);
+}
+
+.show-more-button{
+    font-size: var(--step-1);
+}
+
+.contact-list li{
+    font-size: var(--step-1);
+}
+
+.contact-social-div i{
+    font-size: var(--step-3);
+}

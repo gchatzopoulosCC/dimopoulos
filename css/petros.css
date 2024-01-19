@@ -1,0 +1,93 @@
+@import url('/css/general_styles.css');
+
+/* Clubs Petros */
+
+.generic-section{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.generic-section h2{
+    color: var(--dark_blue);
+}
+
+.generic-section p{
+    line-height: 1.5rem;
+    color: var(--dark_blue);
+}
+
+.intro-section h1{
+    z-index: 2;
+    color: var(--dark_blue);
+}
+
+.generic-section iframe{
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));;
+}
+
+.intro-img{
+    object-fit: cover;
+    height: 60vh;
+    /* Leave the same blank space as all the other elements */
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+}
+
+.reviews-div{
+    width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+}
+
+.reviews-div.more{
+    display: none;
+}
+
+.reviews-div.more.active{
+    display: block;
+}
+
+.review, .show-more-button{
+    width: 40%;
+    border-radius: 1em;
+    border: .1em var(--dark_blue) solid;
+    color: var(--blue);
+}
+
+.show-more-button{
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--fast);
+}
+
+.show-more-button:hover{
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.contact-list{
+    list-style: none;
+    color: var(--blue);
+}
+
+.contact-list a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.contact-list a:hover{
+    text-decoration: underline;
+}
+
+.contact-social-div a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+/* Responsiveness */
+@media screen and (max-width: 640px){
+    .review{
+        width: calc(100% - calc(2 * clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem)));
+    }
+}
