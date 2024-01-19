@@ -67,6 +67,141 @@
     }
 }
 
+/* Home */
+.title, .subtitle{
+    padding: var(--space-xs);
+}
+
+.home-info {
+    padding: var(--space-l);
+}
+
+/* CLUBS */
+
+.banner{
+    padding: var(--space-l);
+    margin: var(--space-l-xl) auto;
+}
+
+.clubs-title{
+    margin-bottom: var(--space-s);
+}
+
+.casper-info{
+    padding: 0 var(--space-l);
+}
+
+.casper-info p{
+    margin: 0 var(--space-m);
+    padding: var(--space-l);
+}
+
+.clubs-generic-section      {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-events {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-carousel     {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-insta-section {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+.clubs-booking {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.clubs-rate-map {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+    padding: 0 var(--space-l);
+}
+
+.myrating {
+    margin-bottom: var(--space-s-l);
+}
+
+.stars {
+    margin-top: var(--space-m);
+}
+
+h2 {
+    margin-bottom: var(--space-m);
+}
+
+.clubs-events h2{
+    margin-bottom: var(--space-xl);
+    text-decoration: underline;
+}
+
+.clubs-carousel-previous{
+    margin-left: var(--space-l);
+}
+
+.clubs-carousel-next{
+    margin-right: var(--space-l);
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    .clubs-info p {
+        margin: var(--space-l);
+    }
+
+    .clubs-rate-explain {
+        margin-bottom: var(--space-m);
+    }
+}
+
+
+/* CONTACT */
+
+.contact-info {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
+.contact-text {
+    padding:  var(--space-m);
+}
+
+.contactform {
+    padding:  var(--space-m);
+    margin-top: var(--space-m);
+}
+
+p {
+    margin-bottom: var(--space-m);
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    [class*="contact-text"] {
+       padding: var(--space-m);
+    }
+}
+
+/* Kaltsios Personal */
+
+.title, .subtitle{
+    padding: var(--space-xs) 0;
+}
+
+.about-me-section {
+    padding: var(--space-s) 0;
+    margin-bottom: var(--space-m);
+}
+
+.find-me-SM {
+    padding: var(--space-m) 0;
+}
+
 
 /* Footer */
 .doc-footer{

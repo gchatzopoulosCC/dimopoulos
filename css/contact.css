@@ -1,0 +1,130 @@
+@import url('/css/general_styles.css');
+
+.banner{
+    position: relative;
+    height: auto;
+    max-width: 60%;
+    border: .1rem solid var(--dark_blue);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-title{
+    color: var(--dark_blue);
+}
+
+.banner h2{
+    text-decoration: none;
+}
+
+.contact-info {
+    box-sizing: border-box;
+    align-items: center;
+    height: 60%;
+}
+
+.contact-text {
+    width: 30%;
+    float: right;
+    color: var(--dark_blue);
+}
+
+.contact-maps {
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /*applies to screen smaller than 768px (phones)*/
+    [class*="contact-"] {
+       width: 100%;
+       overflow: hidden;
+    }
+
+    [class*="Emailcontent"] {
+        width: 100%;
+    }
+}
+
+.text-about-form {
+    color: var(--dark_blue);
+    width: 100%;
+}
+
+.form-req {
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.contactform {
+    position: block;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_blue);
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--grey);
+    width: 100%;
+}
+
+.EmailUs-text{
+    font-size: xx-large;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--dark_blue);
+    font-weight: 300;
+}
+
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: var(--dark_blue);
+}
+
+form input[type = submit]{
+    color: var(--dark_blue);
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+.Emailcontent{
+    grid-template-columns: 100%;
+    width: 100vw;
+}

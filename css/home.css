@@ -1,0 +1,66 @@
+@import url('/css/general_styles.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.banner-title-section{
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    color: var(--dark_blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-carousel-img-div{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.banner-carousel-img{
+    height: inherit;
+    width: inherit;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateX(100%);
+    transition: .7s;
+    display: none;
+}
+
+.banner-carousel-img.active{
+    transform: translateX(0);
+    display: block;
+}
+
+.title {
+    background-color: var(--dark_blue);
+    color: var(--white);
+}
+
+.subtitle {
+    color: var(--dark_blue);
+    background-color: var(--white);
+}
+
+.title, .subtitle{
+    border-radius: .1em;
+    opacity: .95;
+    text-align: center;
+}
+
+
+.welcome-about-us {
+    text-align: center;
+    width: 100%;
+    color: var(--dark_blue);
+    box-shadow: var(--dark_blue) 0px 1px 4px, var(--dark_blue) 0px 0px 0px 3px;
+    /*creates the box around the text*/
+}
+
+
+
+
