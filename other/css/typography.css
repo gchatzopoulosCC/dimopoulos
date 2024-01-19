@@ -109,3 +109,77 @@ body{
 .ch-general-section p{
     font-size: var(--step-1);
 }
+
+/* Clubs Petros */
+
+.intro-section h1{
+    font-size: var(--step-4);
+}
+
+.generic-section h2{
+    font-size: var(--step-3);
+}
+
+.generic-section p{
+    font-size: var(--step-0);
+}
+
+.review-name{
+    font-size: var(--step-1);
+}
+
+.show-more-button{
+    font-size: var(--step-1);
+}
+
+.contact-list li{
+    font-size: var(--step-1);
+}
+
+.contact-social-div i{
+    font-size: var(--step-3);
+}
+
+/* Bars Ntinos */
+.bar-info h2{
+    font-size: var(--step-3);
+}
+
+.bars-location h3{
+    font-size: var(--step-3);
+}
+
+.info-par p{
+    margin: var(--space-l) 0;
+}
+
+.Alexakis_contact_info h4{
+    font-size: var(--step-2);
+}
+
+
+/* Restaurants */
+
+.restaurants-generic-section h1{
+    font-size: var(--step-4);
+}
+
+.restaurants-generic-section h2{
+    font-size: var(--step-3);
+}
+
+.restaurants-info-div p, .restaurants-top-dishes-list li{
+    font-size: var(--step-1);
+}
+
+.restaurants-review h3{
+    font-size: var(--step-1);
+}
+
+.restaurants-practical-section h3{
+    font-size: var(--step-2);
+}
+
+.restaurants-social-div i{
+    font-size: var(--step-2);
+}

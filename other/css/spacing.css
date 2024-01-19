@@ -76,7 +76,7 @@
     padding: var(--space-l);
 }
 
-/* CLUBS */
+/* Kaltsios Clubs */
 
 .banner{
     padding: var(--space-l);
@@ -237,4 +237,133 @@ p {
 .ch-general-section h2{
     margin: var(--space-m);
     margin-top: 0;
+}
+
+
+/* Petros */
+
+.generic-section{
+    padding: var(--space-l) 0;
+}
+
+.intro-section h1{
+    margin-bottom: var(--space-l);
+}
+
+.generic-section h2{
+    margin-bottom: var(--space-m);
+}
+
+.about-section p{
+    margin: 0 var(--space-l);
+}
+
+.review{
+    margin: var(--space-m) auto;
+    padding: var(--space-s);
+}
+
+.review-name{
+    margin-bottom: var(--space-3xs);
+}
+
+.show-more-button{
+    padding: var(--space-2xs) 0;
+}
+
+.contact-list li{
+    margin-bottom: var(--space-3xs);
+}
+
+.contact-social-div{
+    padding: var(--space-m);
+}
+
+.contact-social-div i{
+    margin: 0 var(--space-s);
+}
+
+/* Bars Ntinos */
+.bars-carousel-buttons{
+    margin: var(--space-l);
+}
+
+.bar-info h2{
+  margin: var(--space-l) 0;
+}
+
+.bars-location h3{
+    margin: var(--space-m) 0;
+}
+
+.info-par p{
+    margin: var(--space-l) 0;
+}
+
+.Alexakis_contact_info h4{
+    margin: var(--space-m) 0;
+}
+
+
+/* Restaurants */
+
+.restaurants-generic-section{
+    padding: var(--space-l) 0;
+}
+
+.restaurants-generic-section h1, .restaurants-generic-section h2{
+    margin-bottom: var(--space-m);
+    padding: 0 var(--space-l);
+}
+
+.restaurants-generic-section p {
+    margin: 0 var(--space-l);
+}
+
+.restaurants-top-dishes-list li{
+    margin: var(--space-xs) 0;
+}
+
+.restaurants-top-dishes-list i{
+    margin-right: var(--space-2xs);
+}
+
+.restaurants-review{
+    padding: var(--space-2xs);
+    margin: var(--space-m) 0;
+}
+
+.restaurants-review h3{
+    margin-bottom: var(--space-s);
+}
+
+.restaurants-practical-section h3{
+    margin-bottom: var(--space-xs);
+}
+
+.restaurants-contact-div li{
+    margin-bottom: var(--space-3xs);
+}
+
+.restaurants-social-div{
+    padding: var(--space-m);
+}
+
+@media screen and (max-width: 640px) {
+    .restaurants-info-div img{
+        margin-bottom: var(--space-m);
+    }
+
+    .restaurants-info-div p{
+        margin: 0;
+    }
+
+    .restaurants-top-dishes-list li{
+        margin-left: var(--space-l);
+    }
+
+    .restaurants-review p {
+        margin: 0;
+        padding: 0;
+    }
 }
