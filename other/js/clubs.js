@@ -55,7 +55,7 @@ buttons.forEach(btn => {
 
 /* Chooses Video */
 function showVideo(video) {
-    container.innerHTML = `<video class="clubs-carousel-video" autoplay><source src="/other/videos/clubs/` + video + `" type="video/mp4"></video>`
+    container.innerHTML = `<video class="clubs-carousel-video" autoplay><source src="other/videos/clubs/` + video + `" type="video/mp4"></video>`
 }
 
 /* Load with the first video */

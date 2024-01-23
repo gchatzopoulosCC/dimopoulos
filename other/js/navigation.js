@@ -2,11 +2,11 @@
 
 // Navigation variables
 const restaurants = ['loupino', 'manitari', 'mari e monti', 'miami seafood'];
-const restaurants_hrefs = ['/html/restaurants_demba/loupino.html', "/html/restaurants_demba/manitari.html", '/html/restaurants_demba/mariemonti.html', '/html/restaurants_demba/miami_seafood.html']
+const restaurants_hrefs = ['html/restaurants_demba/loupino.html', "html/restaurants_demba/manitari.html", 'html/restaurants_demba/mariemonti.html', 'html/restaurants_demba/miami_seafood.html']
 const bars = ['gorilas', 'maya', 'nohelia', 'sanna coast', 'shaka', 'shark', 'apallou', 'dentro sto bar'];
-const bars_hrefs = ['/html/bars_alexakis/gorilas.html', '/html/bars_alexakis/maya.html', '/html/bars_alexakis/nohelia.html', '/html/bars_alexakis/sanaa_coast.html', '/html/bars_alexakis/shaka.html', '/html/bars_alexakis/shark.html', '/html/bars_mitsakas/apallou.html', '/html/bars_mitsakas/dentrostobar.html'];
+const bars_hrefs = ['html/bars_alexakis/gorilas.html', 'html/bars_alexakis/maya.html', 'html/bars_alexakis/nohelia.html', 'html/bars_alexakis/sanaa_coast.html', 'html/bars_alexakis/shaka.html', 'html/bars_alexakis/shark.html', 'html/bars_mitsakas/apallou.html', 'html/bars_mitsakas/dentrostobar.html'];
 const clubs = ['casper', 'nhaos', 'pili axiou', 'suita', 'bagallan', 'barbarella', 'jadore'];
-const clubs_hrefs = ['/html/clubs_kaltsios/casper.html', '/html/clubs_kaltsios/nhaos.html', "/html/clubs_kaltsios/pili_axiou.html", '/html/clubs_kaltsios/suita.html', '/html/clubs_mitsakas/bagallan.html', '/html/clubs_mitsakas/barbarella.html', '/html/clubs_mitsakas/jadore.html']
+const clubs_hrefs = ['html/clubs_kaltsios/casper.html', 'html/clubs_kaltsios/nhaos.html', "html/clubs_kaltsios/pili_axiou.html", 'html/clubs_kaltsios/suita.html', 'html/clubs_mitsakas/bagallan.html', 'html/clubs_mitsakas/barbarella.html', 'html/clubs_mitsakas/jadore.html']
 
 
 // Dropdown content

@@ -1,8 +1,8 @@
 /* Kaltsios */
 
-@import url('/other/css/general_styles.css');
+@import url('other/css/general_styles.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('/other/css/spacing.css');
+@import url('other/css/spacing.css');
 
 .title {
     background-color: var(--dark_blue);
